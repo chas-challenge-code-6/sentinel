@@ -1,86 +1,85 @@
-# Project Sentinel – Smart Arbetsmiljösensor för Riskfyllda Yrken
+# Project Sentinel – Smart Workplace Sensor for High-Risk Professions
 
-## 1. Introduktion och Bakgrund
-### Syfte och mål
-Project Sentinel syftar till att skapa en intelligent och proaktiv säkerhetslösning för yrken med hög arbetsmiljörisk. Genom att använda avancerade IoT-sensorer och dataanalys ska systemet identifiera och varna för potentiella risker i realtid. Detta minskar antalet olyckor och skapar en tryggare arbetsmiljö.
+## 1. Introduction and Background
+### Purpose and Goals
+Project Sentinel aims to create an intelligent and proactive safety solution for high-risk workplaces. By utilizing advanced IoT sensors and data analysis, the system will identify and alert users to potential hazards in real-time. This reduces the number of accidents and creates a safer work environment.
 
-### Problembeskrivning
-Många yrkesgrupper utsätts dagligen för risker som farliga gaser, buller, temperaturväxlingar och fallolyckor. Nuvarande säkerhetsåtgärder är ofta reaktiva snarare än proaktiva. Project Sentinel adresserar detta genom att:
-- Upptäcka arbetsmiljörisker i realtid.
-- Automatiskt varna användare och arbetsledare vid potentiella hot.
-- Analysera historiska data för att identifiera riskmönster och förebygga framtida olyckor.
+### Problem Description
+Many professions are exposed daily to risks such as hazardous gases, noise, temperature fluctuations, and falls. Current safety measures are often reactive rather than proactive. Project Sentinel addresses this by:
+- Detecting workplace hazards in real-time.
+- Automatically alerting users and managers to potential threats.
+- Analyzing historical data to identify risk patterns and prevent future accidents.
 
-### Målgrupp
-- Bygg- och anläggningsbranschen
-- Industri- och produktionssektorn
-- Brandmän och räddningstjänst
-- Sjukvårdspersonal och akutsjukvård
-- Transport- och logistiksektorn
+### Target Audience
+- Construction and infrastructure sectors
+- Industrial and manufacturing sectors
+- Firefighters and emergency responders
+- Healthcare and emergency medical personnel
+- Transportation and logistics sector
 
-## 2. Val av Teknologi och Arkitektur
+## 2. Technology Selection and Architecture
 
-### Teknologier
-**Frontend:** React Native för mobilapp (iOS & Android) 
-**Backend:** Node.js med Express, PostgreSQL 
-**IoT & Hårdvara:** Raspberry Pi/ESP32, LoRaWAN/LTE/WiFi
+### Technologies
+**Frontend:** React Native for mobile apps (iOS & Android) 
+**Backend:** Node.js with Express, PostgreSQL 
+**IoT & Hardware:** Raspberry Pi/ESP32, LoRaWAN/LTE/WiFi
 
-### Systemarkitektur
-- **Frontend**: Mobilapplikation för realtidsdata, varningar och historisk analys.
-- **Backend**: API för datainsamling och bearbetning.
-- **IoT-enheter**: Sensorer för gas, temperatur, buller, fall och hjärtfrekvens.
+### System Architecture
+- **Frontend**: Mobile application for real-time data, alerts, and historical analysis.
+- **Backend**: API for data collection and processing.
+- **IoT Devices**: Sensors for gas, temperature, noise, falls, and heart rate.
 
-### API och Databasstruktur
-- **API-endpoints**: Autentisering, datainsamling, varningar, statistik.
-- **Databas**: PostgreSQL med tabeller för användare, sensordata, incidenter.
+### API and Database Structure
+- **API Endpoints**: Authentication, data collection, alerts, statistics.
+- **Database**: PostgreSQL with tables for users, sensor data, incidents.
 
-## 3. Teamstruktur och Ansvarsområden
+## 3. Team Structure and Responsibilities
 
-| Roll | Teammedlemmar | Ansvarsområden |
+| Role | Team Members | Responsibilities |
 |------|--------------|----------------|
-| **Frontend** | Hannele, Rebecka | UI/UX, mobilapp, API-integration |
-| **Fullstack** | Simon, Chie, Elin, Milton | Backend, databas, API, autentisering |
-| **Systemutveckling (IoT)** | Eric, Fredrik, Filip, Chengjun | Sensorer, datahantering, kommunikation |
+| **Frontend** | Hannele, Rebecka | UI/UX, mobile app, API integration |
+| **Fullstack** | Simon, Chie, Elin, Milton | Backend, database, API, authentication |
+| **System Development (IoT)** | Eric, Fredrik, Filip, Chengjun | Sensors, data handling, communication |
 
-### Samarbete
-- Gemensam projektplan och dagliga standups.
-- Sprintbaserad utveckling med 2-veckors iterationer.
-- Veckovisa retrospektiv och sprintavslut.
+### Collaboration
+- Joint project planning and daily standups.
+- Sprint-based development with 2-week iterations.
+- Weekly retrospectives and sprint reviews.
 
-## 4. Arbetsmetodik och Verktyg
-- **Agil metodik:** Scrum med sprintplanering, standups, retrospektiv.
-- **Kodhantering:** GitHub (pull requests, code reviews, branches).
-- **Kommunikation:** Slack & Teams.
-- **Sprintplanering:** Jira/Trello.
+## 4. Work Methodology and Tools
+- **Agile methodology:** Scrum with sprint planning, standups, retrospectives.
+- **Code management:** GitHub (pull requests, code reviews, branches).
+- **Communication:** Slack & Teams.
+- **Sprint planning:** Jira/Trello.
 
-## 5. Tidsplan och Milstolpar
+## 5. Timeline and Milestones
 
-| Vecka | Aktivitet | Teamuppgifter |
-|-------|----------|--------------|
-| 10 | Kickoff, brainstorming, teamindelning | Alla team deltar i projektplanering och val av teknologier |
-| 11-12 | Research, val av hårdvara, arkitekturplanering | Frontend: Skapa wireframes och UI-design; Backend: Definiera API-struktur; IoT: Testa och välja sensorer |
-| 12 | Projektplan färdig & godkänd | Alla team slutför projektplan och presenterar för godkännande |
-| 13-16 | Utveckling av frontend, backend och IoT-komponenter | Frontend: Implementera grundläggande UI/UX; Backend: Skapa API och databaser; IoT: Programmering av sensorer och datainsamling |
-| 17-19 | Integration och testning | Frontend & Backend: API-integration; IoT & Backend: Datakommunikation mellan sensor och moln |
-| 20-21 | Optimering och slutförande | Alla team arbetar med prestandaförbättringar och buggrättningar |
-| 22 | Testning och kvalitetssäkring | Testning av hela systemet med verkliga scenarion |
-| 23 | Demo, utvärdering och retro | Presentation av projektet och retrospektiv |
+| Week | Activity | Team Tasks |
+|------|----------|------------|
+| 10 | Kickoff, brainstorming, team allocation | All teams participate in project planning and technology selection |
+| 11-12 | Research, hardware selection, architecture planning | Frontend: Create wireframes and UI design; Backend: Define API structure; IoT: Test and select sensors |
+| 12 | Project plan completed & approved | All teams finalize the project plan and present for approval |
+| 13-16 | Development of frontend, backend, and IoT components | Frontend: Implement basic UI/UX; Backend: Develop API and database; IoT: Program sensors and data collection |
+| 17-19 | Integration and testing | Frontend & Backend: API integration; IoT & Backend: Data communication between sensors and cloud |
+| 20-21 | Optimization and finalization | All teams work on performance improvements and bug fixes |
+| 22 | Testing and quality assurance | System-wide testing with real-life scenarios |
+| 23 | Demo, evaluation, and retrospective | Presentation of the project and team retrospective |
 
-## 6. Riskanalys och Problemhantering
+## 6. Risk Analysis and Problem Management
 
-| Risk | Åtgärd |
-|------|---------|
-| Kommunikationsbrister | Regelbundna standups och synk-möten |
-| Teknisk komplexitet | Modulär utveckling och iterativ testning |
-| Tidspress | Prioritering av MVP och iterativ leverans |
+| Risk | Mitigation Strategy |
+|------|-----------------|
+| Communication issues | Regular standups and sync meetings |
+| Technical complexity | Modular development and iterative testing |
+| Time constraints | Prioritizing MVP and iterative delivery |
 
-## 7. Leveranser och Dokumentation
-- **Frontend:** Mobilapp med varningar och realtidsdata.
-- **Backend:** API för datainsamling och analys.
-- **IoT:** Sensornätverk med realtidsövervakning.
-- **Dokumentation:** README.md, API-DOCUMENTATION.md, TESTING.md, ARCHITECTURE.md.
+## 7. Deliverables and Documentation
+- **Frontend:** Mobile app with alerts and real-time data.
+- **Backend:** API for data collection and analysis.
+- **IoT:** Sensor network with real-time monitoring.
+- **Documentation:** README.md, API-DOCUMENTATION.md, TESTING.md, ARCHITECTURE.md.
 
-## 8. Sammanfattning
-Project Sentinel skapar en tryggare arbetsmiljö genom realtidsövervakning av riskfyllda förhållanden. Genom smarta sensorer och avancerad dataanalys erbjuder systemet en proaktiv säkerhetslösning för högriskyrken. 
+## 8. Summary
+Project Sentinel enhances workplace safety through real-time monitoring of hazardous conditions. By leveraging smart sensors and advanced data analysis, the system offers a proactive safety solution for high-risk professions.
 
-Vår ambition är att genomföra ett innovativt och affärsmässigt relevant projekt som gynnar såväl användare som arbetsgivare.
-
+Our goal is to execute an innovative and commercially viable project that benefits both users and employers.
