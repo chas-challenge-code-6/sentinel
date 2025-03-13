@@ -77,7 +77,7 @@ Many professions are exposed daily to risks such as hazardous gases, noise, temp
 - **Frontend:** Mobile app with alerts and real-time data.
 - **Backend:** API for data collection and analysis.
 - **IoT:** Sensor network with real-time monitoring.
-- **Documentation:** README.md, API-DOCUMENTATION.md, TESTING.md, ARCHITECTURE.md.
+- **Documentation:** README.md, API-DOCUMENTATION.md, TESTING.md, ARCHITECTURE.md, ACCESSIBILITY.md, CHANGELOG.md, RETROSPECTIV.md.
 
 ## 8. Summary
 Project Sentinel enhances workplace safety through real-time monitoring of hazardous conditions. By leveraging smart sensors and advanced data analysis, the system offers a proactive safety solution for high-risk professions.
