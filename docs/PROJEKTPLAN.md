@@ -1,4 +1,3 @@
-### Placeholder
 # Project Sentinel – Smart Arbetsmiljösensor för Riskfyllda Yrken
 
 ## 1. Introduktion och Bakgrund
