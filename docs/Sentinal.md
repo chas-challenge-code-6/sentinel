@@ -1,6 +1,3 @@
-Here is the English translation of your **Project Sentinel** document:
-
----
 
 # **Project Sentinel – Smart Workplace Sensor for High-Risk Professions**
 
@@ -79,7 +76,3 @@ Project Sentinel is more than a safety product—it is a strategic investment fo
 Project Sentinel revolutionizes workplace safety by combining smart sensors and advanced data analysis to create a safer work environment. With real-time monitoring and predictive analytics, we can prevent accidents before they happen—ultimately saving lives.
 
 🔹 **Innovation Meets Safety – Welcome to the Future with Project Sentinel.**
-
----
-
-This is the fully translated version of your **Project Sentinel** document. Let me know if you need any further adjustments! 🚀
