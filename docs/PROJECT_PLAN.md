@@ -2,7 +2,7 @@
 
 ## 1. Introduction and Background
 ### Purpose and Goals
-Project Sentinel aims to create an intelligent and proactive safety solution for high-risk workplaces. By utilizing advanced IoT sensors and data analysis, the system will identify and alert users to potential hazards in real-time. This reduces the number of accidents and creates a safer work environment.
+Project Sentinel aims to create an intelligent and proactive safety solution for high-risk workplaces. By utilizing advanced IoT sensors and data analysis, the system will identify and alert users to potential hazards in the work enviroment, in real-time. This reduces the number of accidents and creates a safer work environment.
 
 ### Problem Description
 Many professions are exposed daily to risks such as hazardous gases, noise, temperature fluctuations, and falls. Current safety measures are often reactive rather than proactive. Project Sentinel addresses this by:
@@ -49,8 +49,8 @@ Many professions are exposed daily to risks such as hazardous gases, noise, temp
 ## 4. Work Methodology and Tools
 - **Agile methodology:** Scrum with sprint planning, standups, retrospectives.
 - **Code management:** GitHub (pull requests, code reviews, branches).
-- **Communication:** Slack & Teams.
-- **Sprint planning:** Jira/Trello.
+- **Communication:** Exclusivley through Discord.
+- **Sprint planning:** Github Projects.
 
 ## 5. Timeline and Milestones
 
