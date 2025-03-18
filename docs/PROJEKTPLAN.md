@@ -1,16 +1,21 @@
 # Project Sentinel – Smart Workplace Sensor for High-Risk Professions
 
 ## 1. Introduction and Background
+
 ### Purpose and Goals
+
 Project Sentinel aims to create an intelligent and proactive safety solution for high-risk workplaces. By utilizing advanced IoT sensors and data analysis, the system will identify and alert users to potential hazards in the work enviroment, in real-time. This reduces the number of accidents and creates a safer work environment.
 
 ### Problem Description
+
 Many professions are exposed daily to risks such as hazardous gases, noise, temperature fluctuations, and falls. Current safety measures are often reactive rather than proactive. Project Sentinel addresses this by:
+
 - Detecting workplace hazards in real-time.
 - Automatically alerting users and managers to potential threats.
 - Analyzing historical data to identify risk patterns and prevent future accidents.
 
 ### Target Audience
+
 - Construction and infrastructure sectors
 - Industrial and manufacturing sectors
 - Firefighters and emergency responders
@@ -20,16 +25,19 @@ Many professions are exposed daily to risks such as hazardous gases, noise, temp
 ## 2. Technology Selection and Architecture
 
 ### Technologies
-**Frontend:** React Native for mobile apps (iOS & Android) 
-**Backend:** Node.js with Express, PostgreSQL 
+
+**Frontend:** React Native for mobile apps (iOS & Android)
+**Backend:** Node.js with Express, PostgreSQL
 **IoT & Hardware:** ESP32, LoRaWAN/LTE/WiFi
 
 ### System Architecture
+
 - **Frontend**: Mobile application for real-time data, alerts, and historical analysis.
 - **Backend**: API for data collection and processing.
 - **IoT Devices**: Sensors for gas, temperature, noise, falls, and heart rate.
 
 ### API and Database Structure
+
 - **API Endpoints**: Authentication, data collection, alerts, statistics.
 - **Database**: PostgreSQL with tables for users, sensor data, incidents.
 
@@ -42,11 +50,13 @@ Many professions are exposed daily to risks such as hazardous gases, noise, temp
 | **System Development (IoT)** | Eric, Fredrik, Filip, Chengjun | Sensors, data handling, communication |
 
 ### Collaboration
+
 - Joint project planning and daily standups.
 - Sprint-based development with 2-week iterations.
 - Weekly retrospectives and sprint reviews.
 
 ## 4. Work Methodology and Tools
+
 - **Agile methodology:** Scrum with sprint planning, standups, retrospectives.
 - **Code management:** GitHub (pull requests, code reviews, branches).
 - **Communication:** Exclusivley through Discord.
@@ -74,12 +84,14 @@ Many professions are exposed daily to risks such as hazardous gases, noise, temp
 | Time constraints | Prioritizing MVP and iterative delivery |
 
 ## 7. Deliverables and Documentation
+
 - **Frontend:** Mobile app with alerts and real-time data.
 - **Backend:** API for data collection and analysis.
 - **IoT:** Sensor network with real-time monitoring.
 - **Documentation:** README.md, API-DOCUMENTATION.md, TESTING.md, ARCHITECTURE.md, ACCESSIBILITY.md, CHANGELOG.md, RETROSPECTIV.md.
 
 ## 8. Summary
+
 Project Sentinel enhances workplace safety through real-time monitoring of hazardous conditions. By leveraging smart sensors and advanced data analysis, the system offers a proactive safety solution for high-risk professions.
 
 Our goal is to execute an innovative and commercially viable project that benefits both users and employers.
