@@ -22,7 +22,7 @@ Many professions are exposed daily to risks such as hazardous gases, noise, temp
 ### Technologies
 **Frontend:** React Native for mobile apps (iOS & Android) 
 **Backend:** Node.js with Express, PostgreSQL 
-**IoT & Hardware:** Raspberry Pi/ESP32, LoRaWAN/LTE/WiFi
+**IoT & Hardware:** ESP32, LoRaWAN/LTE/WiFi
 
 ### System Architecture
 - **Frontend**: Mobile application for real-time data, alerts, and historical analysis.
