@@ -26,9 +26,9 @@ Many professions are exposed daily to risks such as hazardous gases, noise, temp
 
 ### Technologies
 
-**Frontend:** React Native for mobile apps (iOS & Android)
-**Backend:** Node.js with Express, PostgreSQL
-**IoT & Hardware:** ESP32, LoRaWAN/LTE/WiFi
+- **Frontend:** React Native for mobile apps (iOS & Android)
+- **Backend:** Node.js with Express, PostgreSQL
+- **Hardware:** ESP32, LoRaWAN/LTE/WiFi (undecided), accelerometer (LSM6DS3), gas sensor (MQ-2), temperature sensor (DHT11), microphone (SPH0645?), EKG sensor (AD8232)
 
 ### System Architecture
 
@@ -47,7 +47,7 @@ Many professions are exposed daily to risks such as hazardous gases, noise, temp
 |------|--------------|----------------|
 | **Frontend** | Hannele, Rebecka | UI/UX, mobile app, API integration |
 | **Fullstack** | Simon, Chie, Elin, Milton | Backend, database, API, authentication |
-| **System Development (IoT)** | Eric, Fredrik, Filip, Chengjun | Sensors, data handling, communication |
+| **System Development** | Eric, Fredrik, Filip, Chengjun | Sensors, data handling, communication |
 
 ### Collaboration
 
@@ -66,8 +66,8 @@ Many professions are exposed daily to risks such as hazardous gases, noise, temp
 
 | Week | Activity | Team Tasks |
 |------|----------|------------|
-| 10 | Kickoff, brainstorming, team allocation | All teams participate in project planning and technology selection |
-| 11-12 | Research, hardware selection, architecture planning | Frontend: Create wireframes and UI design; Backend: Define API structure; IoT: Test and select sensors |
+| 10-12 | Brainstorming, team allocation, research, hardware selection | All teams participate in project planning and technology selection |
+|| Frontend: Create wireframes and UI design; Backend: Define API structure; IoT: Test and select sensors |
 | 12 | Project plan completed & approved | All teams finalize the project plan and present for approval |
 | 13-16 | Development of frontend, backend, and IoT components | Frontend: Implement basic UI/UX; Backend: Develop API and database; IoT: Program sensors and data collection |
 | 17-19 | Integration and testing | Frontend & Backend: API integration; IoT & Backend: Data communication between sensors and cloud |
@@ -89,9 +89,3 @@ Many professions are exposed daily to risks such as hazardous gases, noise, temp
 - **Backend:** API for data collection and analysis.
 - **IoT:** Sensor network with real-time monitoring.
 - **Documentation:** README.md, API-DOCUMENTATION.md, TESTING.md, ARCHITECTURE.md, ACCESSIBILITY.md, CHANGELOG.md, RETROSPECTIV.md.
-
-## 8. Summary
-
-Project Sentinel enhances workplace safety through real-time monitoring of hazardous conditions. By leveraging smart sensors and advanced data analysis, the system offers a proactive safety solution for high-risk professions.
-
-Our goal is to execute an innovative and commercially viable project that benefits both users and employers.
