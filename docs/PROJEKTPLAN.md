@@ -80,7 +80,7 @@ Many professions are exposed daily to risks such as hazardous gases, noise, temp
 | Risk | Mitigation Strategy |
 |------|-----------------|
 | Communication issues | Regular standups and sync meetings |
-| Technical complexity | Modular development and iterative testing |
+| Technical complexity | Modular development, iterative testing, detailed documentation, knowledge sharing sessions, and prototyping of complex components |
 | Time constraints | Prioritizing MVP and iterative delivery |
 
 ## 7. Deliverables and Documentation
