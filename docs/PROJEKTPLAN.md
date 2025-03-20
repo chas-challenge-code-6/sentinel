@@ -89,6 +89,6 @@ Many professions are exposed daily to risks such as hazardous gases, noise, temp
 
 - **Frontend:** Mobile app with alerts and real-time data.
 - **Backend:** API for data collection and analysis.
-- **Software and hardware developers** Hardware and software demo progress.
+- **Software and hardware developers:** Hardware and software demo progress.
 - **IoT:** Sensor network with real-time monitoring.
 - **Documentation:** README.md, API-DOCUMENTATION.md, TESTING.md, ARCHITECTURE.md, ACCESSIBILITY.md, CHANGELOG.md, RETROSPECTIVE.md.
