@@ -7,7 +7,7 @@
 ## Getting Started
 
 ## Documentation
-- [Projektplan](docs/PROJEKTPLAN.md)
+- [Projektplan](docs/PROJECTPLAN.md)
 - [Project Idea](docs/idea.md)
 - [Roadmap](/later)
 
