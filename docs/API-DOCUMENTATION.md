@@ -1,5 +1,3 @@
-### API
-
 # Project Sentinel – API Documentation
 
 ## Overview
@@ -114,9 +112,59 @@ Returns a list of recent critical alerts (e.g. gas spike, fall detected).
 
 ---
 
+## 🔐 Authentication Endpoints (Future)
+
+### Register User
+**POST** `/auth/register`
+
+### Login User
+**POST** `/auth/login`
+
+### Get Logged-in User Info
+**GET** `/me`
+
+---
+
+## 📟 Device Management
+
+### Register Device
+**POST** `/devices/register`
+
+### Get All Devices
+**GET** `/devices`
+
+### Get Device Details
+**GET** `/devices/:id`
+
+### Update Device Settings
+**PATCH** `/devices/:id/settings`
+
+---
+
+## ⚠️ Incident Reporting
+
+### Create Incident
+**POST** `/incidents`
+
+### Get Incidents
+**GET** `/incidents`
+
+---
+
+## 📊 Stats and Analytics
+
+### Get Summary Stats
+**GET** `/stats/summary`
+
+### Get Graph Data per Device
+**GET** `/stats/graph/:device_id`
+
+---
+
 ## Status Codes
 - `200 OK`: Request was successful
 - `400 Bad Request`: Missing or malformed data
+- `401 Unauthorized`: Missing or invalid token
 - `500 Internal Server Error`: Server-side failure
 
 ---
