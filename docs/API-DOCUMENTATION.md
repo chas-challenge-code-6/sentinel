@@ -7,13 +7,6 @@ This API allows communication between IoT sensor devices (e.g., ESP32) and the b
 
 ---
 
-## Base URL
-```
-https://yourdomain.com/api
-```
-
----
-
 ## Endpoints
 
 ### 1. Submit Sensor Data
