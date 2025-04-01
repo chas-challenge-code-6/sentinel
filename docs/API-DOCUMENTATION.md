@@ -121,17 +121,4 @@ Returns a list of recent critical alerts (e.g. gas spike, fall detected).
 
 ---
 
-## Future Improvements
-- JWT-based authentication
-- WebSocket or MQTT support for real-time updates
-- Role-based access for users/admins
-
----
-
-## Contact
-For questions, contact the backend team via Discord or GitHub issues.
-
----
-
-_Last updated: 2025-04-01_
 
