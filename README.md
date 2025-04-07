@@ -1,6 +1,7 @@
 # Sentinel
 
 ## Overview
+- [Flowchart](docs/PLANNING/FLOWCHART/Project_sentinel_flowchart.drawio.svg)
 
 ## Features
 
@@ -10,6 +11,7 @@
 - [Projektplan](docs/PROJECTPLAN.md)
 - [Project Idea](docs/idea.md)
 - [Roadmap](/later)
+- [Flowchart](docs/PLANNING/FLOWCHART/Project_sentinel_flowchart.drawio.svg)
 
 stuff
 
