@@ -8,7 +8,7 @@
 ## Getting Started
 
 ## Documentation
-- [Projektplan](docs/PROJECTPLAN.md)
+- [Projectplan](docs/PROJECTPLAN.md)
 - [Project Idea](docs/idea.md)
 - [Roadmap](/later)
 - [Flowchart](docs/PLANNING/FLOWCHART/Project_Sentinel.drawio.svg)
