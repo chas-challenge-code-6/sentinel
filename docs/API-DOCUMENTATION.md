@@ -24,7 +24,6 @@ Receives a JSON payload from an ESP32 sensor unit.
     "gas": {"ppm": 400},
     "temperature": 22.5,
     "humidity": 45,
-    //"acceleration": {"x": 0.2, "y": -0.1, "z": 9.8},
     "fall_detected": false,
     "heart_rate": 75,
     "noise_level": 80,
