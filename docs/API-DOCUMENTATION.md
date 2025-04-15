@@ -103,7 +103,6 @@ Example:
     "heart_rate": 75,
     "noise_level": 80
   },
-  ...
 ]
 ```
 
