@@ -24,7 +24,6 @@ To create a comprehensive safety solution, Project Sentinel integrates multiple 
 
 ### **Sensor Hardware**
 🔍 **Gas Sensor** – Detects hazardous gases such as carbon monoxide, methane, and ammonia.  
-🎧 **Decibel Sensor** – Measures noise levels and alerts users when exposure becomes harmful.  
 🌡 **Temperature & Humidity Sensor** – Identifies heat stress and hypothermia risks.  
 📉 **Accelerometer & Gyroscope** – Detects sudden falls and abnormal movements.  
 ❤️ **Pulse & Oxygen Sensor** – Monitors fatigue and oxygen deficiency.  
