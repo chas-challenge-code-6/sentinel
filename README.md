@@ -7,6 +7,7 @@
 
 ## Getting Started
 
+git clone https://github.com/chas-challenge-code-6/sentinel.git
 git submodule update --init --recursive
 
 
