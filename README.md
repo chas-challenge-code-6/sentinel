@@ -7,6 +7,9 @@
 
 ## Getting Started
 
+git submodule update --init --recursive
+
+
 ## Documentation
 - [Projectplan](docs/PROJECTPLAN.md)
 - [Project Idea](docs/idea.md)
