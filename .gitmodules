@@ -1,3 +1,6 @@
 [submodule "hardware-esp32"]
 	path = hardware-esp32
 	url = https://github.com/chas-challenge-code-6/hardware-esp32.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/chas-challenge-code-6/backend.git
