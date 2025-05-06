@@ -7,3 +7,6 @@
 [submodule "hardware-watch"]
 	path = hardware-watch
 	url = https://github.com/chas-challenge-code-6/hardware-watch.git
+[submodule "mobile-app"]
+	path = mobile-app
+	url = https://github.com/chas-challenge-code-6/mobile-app.git
