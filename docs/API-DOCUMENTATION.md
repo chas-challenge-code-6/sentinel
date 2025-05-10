@@ -130,19 +130,122 @@ Returns a list of recent critical alerts (e.g. gas spike, fall detected).
 
 ---
 
-## 🔐 Authentication Endpoints (Future)
+# 🔐 Authentication Endpoints 
 
-### Register User
+POST /auth/register
+Registers a new user.
 
-**POST** `/auth/register`
+Request Body:
 
-### Login User
+json
+Kopiera kod
+{
+  "username": "yourname",
+  "password": "securePass123!",
+  "email": "you@email.com"
+}
+Response:
 
-**POST** `/auth/login`
+json
+Kopiera kod
+{
+  "status": "success",
+  "message": "User registered successfully",
+  "user": {
+    "username": "yourname"
+  }
+}
+POST /auth/login
+Logs in a user and returns a JWT token.
 
-### Get Logged-in User Info
+Request Body:
 
-**GET** `/me`
+json
+Kopiera kod
+{
+  "username": "yourname",
+  "password": "securePass123!"
+}
+Response:
+
+json
+Kopiera kod
+{
+  "status": "success",
+  "token": "JWT_TOKEN"
+}
+GET /auth/me
+Returns the logged-in user's profile. Requires Bearer token.
+
+Response:
+
+json
+Kopiera kod
+{
+  "status": "success",
+  "user": {
+    "id": 1,
+    "username": "yourname",
+    "email": "you@email.com",
+    "workplace": null,
+    "job_title": null,
+    ...
+  }
+}
+PATCH /auth/me
+Updates the user's profile.
+
+Requires: JWT Bearer token
+
+Request Body (partial allowed):
+
+json
+Kopiera kod
+{
+  "email": "new@email.com",
+  "password": "newSecurePass",
+  "phone_number": "+46700000000",
+  "workplace": "Construction AB",
+  "job_title": "Worker"
+}
+DELETE /auth/me
+Deletes the currently authenticated user.
+
+POST /auth/forgot-password
+Sends a password reset link to the email (valid for 15 min).
+
+Request Body:
+
+json
+Kopiera kod
+{
+  "email": "your@email.com"
+}
+Response:
+
+json
+Kopiera kod
+{
+  "message": "Password reset email sent"
+}
+POST /auth/reset-password
+Accepts the token from email and updates the password.
+
+Request Body:
+
+json
+Kopiera kod
+{
+  "token": "JWT_TOKEN_FROM_EMAIL",
+  "newPassword": "newSecurePass123!"
+}
+Response:
+
+json
+Kopiera kod
+{
+  "message": "Password has been reset"
+}
 
 ---
 
