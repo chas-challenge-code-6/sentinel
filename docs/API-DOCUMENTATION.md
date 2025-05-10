@@ -130,24 +130,24 @@ Returns a list of recent critical alerts (e.g. gas spike, fall detected).
 
 ---
 
-# 🔐 Authentication Endpoints 
+### 🔐 Authentication Endpoints
 
-POST /auth/register
+---
+
+### POST `/auth/register`
 Registers a new user.
 
-Request Body:
-
-json
-Kopiera kod
+**Request Body:**
+```json
 {
   "username": "yourname",
   "password": "securePass123!",
   "email": "you@email.com"
 }
-Response:
+```
 
-json
-Kopiera kod
+**Response:**
+```json
 {
   "status": "success",
   "message": "User registered successfully",
@@ -155,52 +155,58 @@ Kopiera kod
     "username": "yourname"
   }
 }
-POST /auth/login
+```
+
+---
+
+### POST `/auth/login`
 Logs in a user and returns a JWT token.
 
-Request Body:
-
-json
-Kopiera kod
+**Request Body:**
+```json
 {
   "username": "yourname",
   "password": "securePass123!"
 }
-Response:
+```
 
-json
-Kopiera kod
+**Response:**
+```json
 {
   "status": "success",
   "token": "JWT_TOKEN"
 }
-GET /auth/me
-Returns the logged-in user's profile. Requires Bearer token.
+```
 
-Response:
+---
 
-json
-Kopiera kod
+### GET `/auth/me`
+Returns the logged-in user's profile.  
+**Requires:** Bearer token
+
+**Response:**
+```json
 {
   "status": "success",
   "user": {
     "id": 1,
     "username": "yourname",
     "email": "you@email.com",
+    "phone_number": null,
     "workplace": null,
-    "job_title": null,
-    ...
+    "job_title": null
   }
 }
-PATCH /auth/me
-Updates the user's profile.
+```
 
-Requires: JWT Bearer token
+---
 
-Request Body (partial allowed):
+### PATCH `/auth/me`
+Updates the user's profile.  
+**Requires:** Bearer token
 
-json
-Kopiera kod
+**Request Body (partial allowed):**
+```json
 {
   "email": "new@email.com",
   "password": "newSecurePass",
@@ -208,44 +214,66 @@ Kopiera kod
   "workplace": "Construction AB",
   "job_title": "Worker"
 }
-DELETE /auth/me
-Deletes the currently authenticated user.
+```
 
-POST /auth/forgot-password
-Sends a password reset link to the email (valid for 15 min).
+**Response:**
+```json
+{
+  "message": "Profile updated successfully"
+}
+```
 
-Request Body:
+---
 
-json
-Kopiera kod
+### DELETE `/auth/me`
+Deletes the currently authenticated user.  
+**Requires:** Bearer token
+
+**Response:**
+```json
+{
+  "message": "User deleted successfully"
+}
+```
+
+---
+
+### POST `/auth/forgot-password`
+Sends a password reset link to the email (valid for 15 minutes).
+
+**Request Body:**
+```json
 {
   "email": "your@email.com"
 }
-Response:
+```
 
-json
-Kopiera kod
+**Response:**
+```json
 {
   "message": "Password reset email sent"
 }
-POST /auth/reset-password
-Accepts the token from email and updates the password.
+```
 
-Request Body:
+---
 
-json
-Kopiera kod
+### POST `/auth/reset-password`
+Accepts a token from email and updates the user's password.
+
+**Request Body:**
+```json
 {
   "token": "JWT_TOKEN_FROM_EMAIL",
   "newPassword": "newSecurePass123!"
 }
-Response:
+```
 
-json
-Kopiera kod
+**Response:**
+```json
 {
   "message": "Password has been reset"
 }
+```
 
 ---
 
