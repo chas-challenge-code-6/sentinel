@@ -61,7 +61,6 @@ Returns the latest sensor data from each device.
     "humidity": 45,
     "fall_detected": false,
     "device_battery": 85,
-    "watch_battery": 90,
     "gas": 400,
     "steps": 1000,
     "heart_rate": 75,
@@ -98,7 +97,6 @@ Example:
     "gas": 400,
     "fall_detected": false,
     "device_battery": 85,
-    "watch_battery": 90,
     "heart_rate": 75,
     "noise_level": 80
   },
