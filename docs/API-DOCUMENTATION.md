@@ -21,15 +21,14 @@ Receives a JSON payload from an ESP32 sensor unit.
   "device_id": "ESP32-001",
   "timestamp": "2025-04-01T12:34:56Z",
   "sensors": {
-    "gas": {"ppm": 400},
+    "gas": "ppm": 400,
     "temperature": 22.5,
     "humidity": 45,
     "fall_detected": false,
     "heart_rate": 75,
     "noise_level": 80,
     "steps": 1000,
-    "device_battery": 85,
-    "watch_battery": 90
+    "device_battery": 85
   }
 }
 ```
