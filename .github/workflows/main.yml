@@ -23,8 +23,13 @@ jobs:
         run: |
           git submodule update --remote --merge
           git add .
-          git commit -m "Update submodules"
-          git push
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Update submodules"
+            git push
+          else
+            echo "No submodule changes to commit."
+          fi
 
   create-release:
     needs: update-submodules
@@ -42,4 +47,3 @@ jobs:
           prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
-
