@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set git identity
+        run: |
+          git config --global user.name "Github Actions"
+          git config --global user.email "gh-actions@chasacademy.se"
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
@@ -38,3 +42,4 @@ jobs:
           prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+
