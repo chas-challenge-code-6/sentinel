@@ -3,10 +3,24 @@
 ## Welcome... 👋
 ... to the Sentinel project. This project aims to be an aid to construction workers, emergency personnel or securety guards. Our idea with this product is to be the extra eye that keeps track of your health and help you in critical situations. 
 
-## Getting Started❗
+## Getting Started❗  
 
 git clone https://github.com/chas-challenge-code-6/sentinel.git  
 git submodule update --init --recursive
+
+## Installation/Setup
+* Start of by connecting the ESP32 to your computer
+* Open Device managment and make sure to check that the device is recognised as "Serial USB-device (COMX (X = some number between 1-10))
+* Open VS code and open the folder "Sentinel"
+* Let PlatformIO run it's course to load the necesity
+* Go into the Sentinel mapp -> Hardware-ESP32
+* Select the enviroment "Sentinel"
+* In PlatformIO manegement, begin by clicking "Build" and make sure no errors occur
+* In PlatformIO mangement, continue by clicking "Upload"
+
+### Error checking
+* If the device isn't working properly, try clicking the reset button
+* If it still does not work contact or send a message to one of the contrubuters and we will try and help.
 
 <br>
 
@@ -84,7 +98,8 @@ Project Sentinel is more than a safety product—it is a strategic investment fo
 
 ## Documentation
 🏗️  [Projectplan](docs/PROJECTPLAN.md)  
-♾️  [Flowchart](docs/PLANNING/FLOWCHART/Project_Sentinel.drawio.svg)
+♾️  [Flowchart](docs/PLANNING/FLOWCHART/Project_Sentinel.drawio.svg)  
+🏢  [Architecture](docs/ARCHITECTURE.md)
 
 
 ## Road map
