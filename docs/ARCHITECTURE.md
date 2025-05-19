@@ -1,65 +1,83 @@
-### ARCHITECTURE
+# ARCHITECTURE
 
-// OM varning till användare
 
-Steps kommer från klockan. Om klockan läser över 10 000 -> skicka data till ESP32 (datorn) -> ESP32 skickar data till databas -> databasen skickar data till mobilapp -> data visas på mobilapp/en notis skickas till användare. 
+## Components
 
-Kod:
+### MQ2 Gas sensor
+> Used to detect dangoures gas in the vicinity.
 
+### DHT 11 sensor
+> Used to read temperature and humidity
+
+### Polar HRT H7 EKG sensor
+> Used to read the users current heart rate
+
+### ADXL345 Accelerometer
+> Used to detect fall and movment of the user
+
+### Lilygo ESP 32 S3 SIM7670
+> Main hardware to collect data and process the data, with built in LTE/GPS compatability for use to send notifications to nearby users.
+
+## Structure / Examples
+
+### If waring to user
+
+Steps are read from the ADXL345. If it detects over 10 000 steps -> Send a notice to the user via the application. 
+
+Psuedo code:
+```cpp
 steps = 0
 
+// ESP32 checks the following:
+if steps > 10 000:
+  send data to esp32
 
---- ESP32 kollar detta:
-OM steps > 10 000:
-  skicka data till esp32 (datorn)
+if esp32.revicedData
+  send data to database
 
-OM esp32.revicedData
-  skicka data till databas
-
-data skickas ut till mobilapp. notis blir synlig i appen.
-
-
+// Data is sent to user
+```
 
 
-// I vanliga fall
 
-Steps kommer klockan. Klockan skickar data till databas var 10:e sekund (exempelvis) -> klockan rensar därefter antalet steg för att frigöra minne -> data lagras i databas -> data kan hämtas/visas i mobilapp. 
+### In normal conditions
 
+Steps comes from the sensor. The ESP32 recives the data every 10:th second (for example) -> The queue is cleared in order to free up memory -> data is sent to database -> data is shown in the mobile app
+
+```cpp
 steps = 0
 time = 0
 
-OM time > 10:e sekund:
-  skicka data till esp32 (datorn)
-  nollställ steps i klocka
-
-OM esp32.revicedData
-  skicka data till databas
-
-data skickas ut till mobilapp. ingen notis skickas men användare kan se sina nuvarande steg i appen.
+if time > 10:th second:
+  send data to esp32
 
 
+if esp32.revicedData
+  send data to database
+  clear data from queue to save memory
+
+// data is sent to the mobile app. No notis is sent to the user but the user can see the current steps in the application 
+```
 
 
-// Vid varm dag utomhus + många steg
+### Hot day and many steps
 
-Tempsensor mäter temp i miljö, klocka räknar steg. Om över 25 C + 5000 steg -> klocka skickar data till ESP32 -> ESP32 skickar data till databas -> data skickas till mobilapp -> mobilapp skickar ut varning till användare (Ta en paus, det är varmt ute! || Drick vatten, du har rört på dig mycket!)
+The temperature sensor reads the current temperature in the current enviorment. Steps is calculated. If it's 25 C and steps is over 5000 -> Data is sent to the ESP32 -> Data is sent to the database -> Data is shown in the app and a notis is sent to the user like "Take a break, it's currently hot outside and you have worked hard! Take a brake and drink some water"
 
+```cpp
 steps = 0
 temp = 25 C
 
---- ESP32 kollar detta:
-OM temp >= 25 och steps = 5000
-  skicka data till esp32 
-  nollställ klockan
+if temp >= 25 && steps = 5000
+  send data to ESP32
+  clear memory for the ESP32
 
 Om esp32.recivedData
-  skicka data till databas
+  send data to database
 
-data skickas ut till mobilapp, varnings-notis skickas till användare om att ta en paus och dricka vatten
+// data is sent to the mobile app, a warning notis is sent to the user to take a break.
+```
 
-// Vid varm dag
 
-
-Tempsensor mäter temp i miljö, ESP32 skickar aktuell data (temp) till databas -> data hämtas av mobilapp -> mobilapp visar aktuell temp i miljö till användare. Om varmt (ca 25+ C) - förkännedoms-notis om att det är varmt, be användaren vara uppmärksam på att ta pauser/ta det försiktgt.
 
 
