@@ -84,8 +84,7 @@ Project Sentinel is more than a safety product—it is a strategic investment fo
 
 ## Documentation
 🏗️  [Projectplan](docs/PROJECTPLAN.md)  
-♾️  [Flowchart](docs/PLANNING/FLOWCHART/Project_Sentinel.drawio.svg)
-
+♾️  [Flowchart](docs/Flowchart/Flowchart-preview.png)
 
 ## Road map
 A road map to the other repo:s
