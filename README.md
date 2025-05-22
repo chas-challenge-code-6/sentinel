@@ -1,4 +1,4 @@
-# Sentinel <img src="https://github.com/chas-challenge-code-6/sentinel/blob/main/docs/Sentinel.png" width="40">
+# Sentinel <img src="https://github.com/chas-challenge-code-6/sentinel/blob/main/docs/Logo/Sentinel-small.png" width="40">
 
 ## Welcome... 👋
 ... to the Sentinel project. This project aims to be an aid to construction workers, emergency personnel or securety guards. Our idea with this product is to be the extra eye that keeps track of your health and help you in critical situations. 
