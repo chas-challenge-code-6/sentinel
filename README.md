@@ -99,7 +99,7 @@ Project Sentinel is more than a safety product—it is a strategic investment fo
 ## Documentation
 🏗️  [Projectplan](docs/PROJECTPLAN.md)  
 ♾️  [Flowchart](docs/Flowchart/Flowchart-preview.png)  
-🏢  [Architecture](docs/ARCHITECTURE.md)
+🏢  [Architecture](docs/ARCHITECTURE.md)  
 ❗️  [Doxygen documentation for ESP32](https://chas-challenge-code-6.github.io/hardware-esp32/)
 
 
