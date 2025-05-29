@@ -3,6 +3,9 @@
 ## Welcome... 👋
 ... to the Sentinel project. This project aims to be an aid to construction workers, emergency personnel or securety guards. Our idea with this product is to be the extra eye that keeps track of your health and help you in critical situations. 
 
+## Application 📱  
+In order to get a nice experience using your Sentinel device, you can download our amazing application [here](https://expo.dev/accounts/bexgren/projects/mobile-app/builds/9583d1d5-2333-47a6-a1c6-32672a0d3c91).  
+
 ## Getting Started❗  
 
 git clone https://github.com/chas-challenge-code-6/sentinel.git  
