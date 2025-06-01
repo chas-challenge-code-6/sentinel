@@ -64,7 +64,7 @@ To create a comprehensive safety solution, Project Sentinel integrates multiple 
 🔍 **Gas Sensor** – Detects hazardous gases such as carbon monoxide, methane, and ammonia.  
 🌡 **Temperature & Humidity Sensor** – Identifies heat stress and hypothermia risks.  
 📉 **Accelerometer & Gyroscope** – Detects sudden falls and abnormal movements.  
-❤️ **Pulse & Oxygen Sensor** – Monitors fatigue and oxygen deficiency.  
+❤️ **Pulse Sensor** – Monitors heart rate.  
 📡 **LTE Communication** – Ensures a stable connection even in areas without reliable Wi-Fi.
 
 ### **Data Analysis and Monitoring**
