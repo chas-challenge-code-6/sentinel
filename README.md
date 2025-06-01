@@ -65,7 +65,7 @@ To create a comprehensive safety solution, Project Sentinel integrates multiple 
 🌡 **Temperature & Humidity Sensor** – Identifies heat stress and hypothermia risks.  
 📉 **Accelerometer & Gyroscope** – Detects sudden falls and abnormal movements.  
 ❤️ **Pulse Sensor** – Monitors heart rate.  
-📡 **LTE Communication** – Ensures a stable connection even in areas without reliable Wi-Fi.
+📡 **LTE/4G Communication** – Ensures a stable connection even in areas without reliable Wi-Fi.
 
 ### **Data Analysis and Monitoring**
 
